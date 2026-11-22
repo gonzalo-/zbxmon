@@ -1,0 +1,24 @@
+# Patterns start with **/ so they also match in sub-directories when used with got(1):
+# per its man page, got only matches deeper than the .gitignore's own directory for patterns beginning with **/.
+# git(1) accepts the same patterns.
+
+# Gradle / Android
+**/build/
+**/.gradle/
+**/.kotlin/
+**/local.properties
+**/*.apk
+**/*.aab
+
+# IDE
+**/.idea/
+**/*.iml
+**/.DS_Store
+
+# Signing material: never commit
+**/keystore.properties
+**/*.jks
+**/*.keystore
+
+# Release output
+**/dist/

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ZbxMon</string>
+
+    <string name="sev_0">No clasificada</string>
+    <string name="sev_1">Información</string>
+    <string name="sev_2">Advertencia</string>
+    <string name="sev_3">Promedio</string>
+    <string name="sev_4">Alta</string>
+    <string name="sev_5">Desastre</string>
+    <string name="sev_short_0">N/C</string>
+    <string name="sev_short_1">Info</string>
+    <string name="sev_short_2">Aviso</string>
+    <string name="sev_short_3">Prom</string>
+    <string name="sev_short_4">Alta</string>
+    <string name="sev_short_5">Desastre</string>
+
+    <string name="ch_high">🔴 Alta / Desastre</string>
+    <string name="ch_mid">🟠 Advertencia / Promedio</string>
+    <string name="ch_low">🔵 Información</string>
+    <string name="ch_ok">✅ Resueltos</string>
+    <string name="ch_fg">📡 Monitoreo activo</string>
+    <string name="notif_more_title">🚨 +%1$d problemas nuevos</string>
+    <string name="notif_more_text">Abrí la app para verlos</string>
+    <plurals name="notif_recovered_title">
+        <item quantity="one">✅ %d resuelto</item>
+        <item quantity="other">✅ %d resueltos</item>
+    </plurals>
+    <string name="notif_test_profile">Prueba</string>
+    <string name="notif_test_host">host-demo</string>
+    <string name="notif_test_text">Notificación de prueba de ZbxMon</string>
+    <string name="fg_title">📡 ZbxMon monitoreando</string>
+    <string name="fg_starting">Iniciando…</string>
+    <string name="poll_no_profiles">Sin servidores activos</string>
+
+    <string name="err_no_server">No hay servidor configurado</string>
+    <string name="err_not_jsonrpc">La respuesta no es JSON-RPC (¿la URL es correcta?)</string>
+    <string name="err_api">Error de API</string>
+    <string name="err_http">Error HTTP %1$s</string>
+    <string name="err_pin">La huella TLS del servidor no coincide con la guardada</string>
+    <string name="err_bad_url">URL inválida</string>
+
+    <string name="tab_hosts">Hosts</string>
+    <string name="tab_problems">Problemas</string>
+    <string name="menu_manage_servers">🗂️ Gestionar servidores</string>
+    <string name="welcome_hint">Agregá un servidor Zabbix (URL + token de API) para empezar.</string>
+    <string name="welcome_add">➕ Agregar servidor</string>
+    <string name="summary_line">🟢 %1$d OK   ⚠️ %2$d con problemas   🖥️ %3$d</string>
+    <string name="search_hosts">🔎 Buscar host / IP</string>
+    <string name="no_hosts">Sin hosts para mostrar</string>
+    <string name="loading">Cargando…</string>
+    <string name="no_ip">sin IP</string>
+    <string name="host_disabled">deshabilitado</string>
+    <string name="host_iface_down">interfaz caída</string>
+    <string name="filter_all">Todas</string>
+    <string name="filter_unack">🔔 Sin ack</string>
+    <string name="no_problems">🎉 Sin problemas</string>
+
+    <string name="problem_title">Problema</string>
+    <string name="problem_gone">✔️ Este problema ya no está activo.</string>
+    <string name="problem_suppressed">🔧 Suprimido (mantenimiento)</string>
+    <string name="problem_acked">✅ Reconocido</string>
+    <string name="problem_unacked">🔔 Sin reconocer</string>
+    <string name="msg_label">💬 Mensaje (opcional)</string>
+    <string name="btn_ack">✅ Ack</string>
+    <string name="btn_unack">↩️ Quitar ack</string>
+    <string name="btn_comment">💬 Comentar</string>
+    <string name="sent_ok">✅ Enviado</string>
+    <string name="history">📜 Historial</string>
+
+    <string name="problems_section">🚨 Problemas</string>
+    <string name="items_section">📊 Items</string>
+    <string name="filter_items">🔎 Filtrar items</string>
+    <string name="no_data">📭 Sin datos en este rango</string>
+
+    <string name="servers_title">Servidores</string>
+    <string name="no_servers">Todavía no hay servidores. Tocá ➕ para agregar uno.</string>
+    <string name="edit">✏️ Editar</string>
+    <string name="delete_title">¿Borrar %1$s?</string>
+    <string name="delete_text">Se elimina el servidor y su token de este teléfono.</string>
+    <string name="delete_confirm">🗑️ Borrar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="new_server">Nuevo servidor</string>
+    <string name="edit_server">Editar servidor</string>
+    <string name="field_name">🏷️ Nombre</string>
+    <string name="field_url">🌐 URL del frontend</string>
+    <string name="field_url_hint">Sin api_jsonrpc.php. Ej: https://zbx.midominio.com/zabbix</string>
+    <string name="http_warning">⚠️ HTTP: el token viaja sin cifrar. Usalo solo dentro de LAN/VPN.</string>
+    <string name="field_user">👤 Usuario (opcional)</string>
+    <string name="field_user_hint">Solo etiqueta: el token de API ya pertenece a un usuario</string>
+    <string name="field_token">🔑 Token de API</string>
+    <string name="field_token_hint">Zabbix → Users → API tokens</string>
+    <string name="self_signed">🔐 Certificado autofirmado (fijar huella)</string>
+    <string name="field_fingerprint">Huella SHA-256</string>
+    <string name="btn_fetch_fp">🔍 Obtener huella del servidor</string>
+    <string name="fp_fetched">🔐 Huella leída. Verificala contra tu servidor antes de guardar:\n%1$s</string>
+    <string name="btn_test">🧪 Probar conexión</string>
+    <string name="test_ok">✅ Conectado · Zabbix %1$s</string>
+    <string name="btn_save">💾 Guardar</string>
+
+    <string name="settings_title">Ajustes</string>
+    <string name="sec_style">🎨 Estilo</string>
+    <string name="theme_minimal">✨ Minimalista</string>
+    <string name="theme_terminal">🖥️ Terminal</string>
+    <string name="sec_language">🌐 Idioma</string>
+    <string name="lang_system">Sistema</string>
+    <string name="lang_en">English</string>
+    <string name="lang_es">Español</string>
+    <string name="sec_notifications">🔔 Notificaciones</string>
+    <string name="notify_from">Avisar desde la severidad:</string>
+    <string name="notify_recovery">✅ Avisar cuando se resuelve</string>
+    <string name="sec_polling">⏰ Chequeo periódico (sin servicios de Google)</string>
+    <string name="polling_note">Android no permite menos de 15 min en segundo plano normal.</string>
+    <string name="sec_fg">📡 Servicio en primer plano</string>
+    <string name="fg_switch">Alertas casi inmediatas (deja una notificación fija)</string>
+    <string name="sec_permissions">🛠️ Permisos</string>
+    <string name="btn_allow_notif">🔔 Permitir notificaciones</string>
+    <string name="btn_battery">🔋 Optimización de batería</string>
+    <string name="btn_test_notif">📣 Enviar notificación de prueba</string>
+
+    <string name="sec_display">🎛️ Pantalla</string>
+    <string name="density_label">Densidad:</string>
+    <string name="density_comfortable">Cómoda</string>
+    <string name="density_compact">Compacta</string>
+    <string name="refresh_label">Refrescar en pantalla cada:</string>
+    <string name="sort_severity">Severidad</string>
+    <string name="sort_name">Nombre</string>
+    <string name="sort_recent">Más reciente</string>
+
+    <string name="snooze_btn">😴 Posponer</string>
+    <string name="snooze_title">Posponer notificaciones</string>
+    <string name="snooze_1h">1 hora</string>
+    <string name="snooze_4h">4 horas</string>
+    <string name="snooze_8h">8 horas</string>
+    <string name="snooze_24h">24 horas</string>
+    <string name="snooze_forever">🔕 Hasta que las reactive</string>
+    <string name="snooze_cancel">🔔 Reactivar notificaciones</string>
+    <string name="snooze_active_until">😴 Pospuesto hasta %1$s</string>
+    <string name="snooze_muted">🔕 Silenciado</string>
+
+    <string name="sec_quiet">🌙 Horario silencioso</string>
+    <string name="quiet_switch">Sin avisos durante estas horas</string>
+    <string name="quiet_from">Desde</string>
+    <string name="quiet_to">hasta</string>
+    <string name="quiet_allow_disaster">🔥 Avisar igual los Desastre</string>
+    <string name="quiet_note">Los problemas que aparecen en horario silencioso se avisan cuando termina.</string>
+    <string name="notify_digest">📋 Agrupar problemas nuevos en una sola notificación</string>
+    <plurals name="notif_digest_title">
+        <item quantity="one">🚨 %d problema nuevo</item>
+        <item quantity="other">🚨 %d problemas nuevos</item>
+    </plurals>
+
+    <string name="widget_description">Muestra un resumen de tus servidores</string>
+    <string name="widget_empty">Abrí ZbxMon y agregá un servidor</string>
+    <string name="widget_updated">Actualizado %1$s</string>
+
+    <string name="btn_share">📤 Compartir</string>
+    <string name="share_title">Compartir problema</string>
+    <string name="history_title">Problemas resueltos</string>
+    <string name="history_range">Últimos 7 días</string>
+    <string name="history_none">Sin problemas resueltos en este período</string>
+
+    <string name="sec_donate">💛 Apoyá el proyecto</string>
+    <string name="donate_text">ZbxMon es libre y de código abierto. Si te resulta útil, podés apoyar su desarrollo con Bitcoin.</string>
+    <string name="donate_btc">₿ Bitcoin (on-chain)</string>
+    <string name="donate_copy">📋 Copiar</string>
+    <string name="donate_open">👛 Abrir en billetera</string>
+    <string name="donate_copied">Copiado</string>
+    <string name="donate_no_wallet">No se encontró una app de billetera</string>
+</resources>

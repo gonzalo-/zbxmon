@@ -1,0 +1,39 @@
+name: Build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  debug-apk:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # The repository ships gradle-wrapper.jar: make sure it is the official one.
+      - uses: gradle/actions/wrapper-validation@v4
+
+      - name: Check translations are in sync
+        run: python3 scripts/check-strings.py
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - uses: gradle/actions/setup-gradle@v4
+
+      - name: Accept Android SDK licenses
+        run: yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses > /dev/null || true
+
+      - name: Build debug APK
+        run: ./gradlew --console=plain assembleDebug
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: zbxmon-debug-apk
+          path: app/build/outputs/apk/debug/app-debug.apk
