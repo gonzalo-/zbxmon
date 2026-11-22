@@ -1,5 +1,7 @@
 # ZbxMon 📡
 
+**English** · [Español](README.es.md) · [日本語](README.ja.md)
+
 [![Build](https://github.com/gonzalo-/zbxmon/actions/workflows/build.yml/badge.svg)](https://github.com/gonzalo-/zbxmon/actions/workflows/build.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
